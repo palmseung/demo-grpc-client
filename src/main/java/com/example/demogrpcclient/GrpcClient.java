@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @Service
 public class GrpcClient {
-  private static final int PORT = 8080;
+  private static final int PORT = 58080;
   public static final String HOST = "localhost";
   private final SampleServiceGrpc.SampleServiceStub asyncStub = SampleServiceGrpc.newStub(
       ManagedChannelBuilder.forAddress(HOST, PORT)
